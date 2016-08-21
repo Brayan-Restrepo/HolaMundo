@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+<h:head>
+	<title>Biblioteca</title>
+	<link rel="stylesheet" href="resources/css/estilo.css"/>
+</h:head>
+ 
+<body>
+	<!-- Encabezado -->
+	<header>
+		<img src="resources/img/ex-men.jpg"></img>
+		<h1>Biblioteca Lisa Simpson</h1>
+	</header> 
+	
+	<!-- Menu -->
+	<nav>
+		<ul>
+			<li><h:link value="Circulacion" outcome="prestamo" /></li>
+			<li><h:link value="Gestionar Colección" outcome="gestionarColeccion" /></li>
+		</ul>
+	</nav>
+	
+	<!-- Contenido -->
+	<section>
+		<ui:insert name="contenido">
+              <h2>Aquí va el contenido dinámico</h2>
+		</ui:insert>
+	</section>
+	
+	<!-- Pie de Pagina -->
+	<footer>
+		<small>
+			&copy;2015 Biblioteca Lisa Simpson Construida con la tecnología JSF 2.0 por @Hawer_20
+		</small>
+	</footer>
+	 
+	
+</body> 
+
+</html>

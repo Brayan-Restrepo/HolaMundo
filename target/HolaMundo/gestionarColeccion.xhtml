@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+	<ui:composition template="resources/plantillas/template.xhtml">
+		<ui:define name="contenido">
+			<h1>Gestionar Colección</h1>
+			<h:form>
+				<h:outputLabel value="Codigo: " />
+				<h:inputText value="#{modelGestionarColeccion.codigo}" />
+				<h:outputLabel value="Titulo: " />
+				<h:inputText value="#{modelGestionarColeccion.titulo}" />
+				<h:outputLabel value="Autor: " />
+				<h:inputText value="#{modelGestionarColeccion.autor}" />
+				<h:outputLabel value="Area: " />
+				<h:inputText value="#{modelGestionarColeccion.area}" />
+				<p>
+					<h:commandButton  value="Gestionar" action="#{controllerGestionarColeccion.gestionar()}"/>
+				</p>
+			</h:form>
+		</ui:define>	
+	</ui:composition>
+</html>
